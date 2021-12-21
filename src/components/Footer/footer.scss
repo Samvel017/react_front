@@ -1,0 +1,115 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #1b3544;
+  width: 100%;
+  grid-gap: 96px;
+  padding: 33px 20px;
+  position: relative;
+  .footer-content {
+    padding-right: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-gap: 72px;
+    .title {
+      h3 {
+        font-size: 32px;
+        color: #fff;
+        line-height: 42px;
+        margin-bottom: 17px;
+        font-weight: 400;
+      }
+      p {
+        color: #e5e5e5;
+        font-size: 12px;
+        line-height: 22px;
+        max-width: 359px;
+        padding-bottom: 26px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.13);
+      }
+    }
+    .about {
+      p {
+        font-size: 12px;
+        color: #fff;
+        display: flex;
+        grid-gap: 15px;
+        margin-bottom: 25px;
+        span {
+          display: flex;
+          grid-gap: 10px;
+          align-items: center;
+          strong {
+            font-size: 30px;
+          }
+        }
+      }
+      .members {
+        display: flex;
+        grid-gap: 40px;
+        div {
+          h4 {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 6px;
+            line-height: 21px;
+            font-weight: 500;
+          }
+          h6 {
+            color: #fff;
+            font-size: 10px;
+            line-height: 15px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .footer-img {
+    position: absolute;
+    left: 5rem;
+    bottom: 0;
+    max-width: 30vw;
+    img {
+      width: 20vw;
+    }
+  }
+}
+
+@media screen and(max-width:1207px) {
+  .footer .footer-img {
+    left: 1rem;
+    img {
+      width: 40vw;
+    }
+  }
+  .footer .footer-content {
+    flex-direction: column;
+  }
+}
+@media screen and(max-width:754px) {
+  .footer .footer-img img {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer .footer-content {
+    padding-right: 0rem;
+  }
+}
+@media screen and(max-width:393px) {
+  .footer .footer-content .about .members {
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 80px;
+    }
+    div {
+      max-width: 150px;
+    }
+  }
+}
